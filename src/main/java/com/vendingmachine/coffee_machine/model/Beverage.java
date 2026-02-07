@@ -16,16 +16,13 @@ public class Beverage {
     @Positive(message = "Price must be greater than 0")
     private double price;
 
-    private boolean isAvailable;
-
     public Beverage(){
 
     }
-    public Beverage(String id, String name, double price, boolean isAvailable) {
+    public Beverage(String id, String name, double price) {
         this.id = id;
         this.name = name;
         this.price = price;
-        this.isAvailable = isAvailable;
     }
 
     public String getName() {
@@ -52,21 +49,12 @@ public class Beverage {
         this.price = price;
     }
 
-    public boolean isAvailable() {
-        return isAvailable;
-    }
-
-    public void setAvailable(boolean available) {
-        isAvailable = available;
-    }
-
     @Override
     public String toString() {
         return "Beverage{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", price=" + price +
-                ", isAvailable=" + isAvailable +
                 '}';
     }
 }

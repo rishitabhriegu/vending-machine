@@ -8,6 +8,7 @@ import com.vendingmachine.coffee_machine.repository.BeverageRepository;
 import com.vendingmachine.coffee_machine.repository.ReceiptRepository;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -57,6 +58,7 @@ public class CartService {
 
         double total = cart.getTotalAmount();;
         Receipt receipt = new Receipt(receiptItems, total);
+        LocalDateTime now = LocalDateTime.now();
         Receipt savedReceipt = receiptRepository.save(receipt);
         cart.clear();
         return savedReceipt;

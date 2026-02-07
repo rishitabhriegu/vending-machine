@@ -5,3 +5,18 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/coffee_machine
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: rishitabhriegu17@gmail.com
+    password: niag cqda avyq bggt
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          ssl:
+            trust: smtp.gmail.com
