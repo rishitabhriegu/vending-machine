@@ -5,7 +5,6 @@ import com.vendingmachine.coffee_machine.model.cart.Cart;
 import com.vendingmachine.coffee_machine.service.CartService;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/cart")
 public class CartController {

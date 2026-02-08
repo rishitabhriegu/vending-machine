@@ -13,11 +13,10 @@ public class Cart {
     public void addItem(Beverage beverage){
         String beverageId = beverage.getId();
 
-        if(items.containsKey(beverageId)){
+        if(items.containsKey(beverageId))
             items.get(beverageId).increaseQuantity();
-        } else {
+        else
             items.put(beverageId, new CartItem(beverage, 1));
-        }
     }
 
     public void removeItem(String beverageId){
