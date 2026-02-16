@@ -3,6 +3,7 @@ package com.vendingmachine.coffee_machine.controller;
 import com.vendingmachine.coffee_machine.model.Beverage;
 import com.vendingmachine.coffee_machine.service.BeverageService;
 import jakarta.validation.Valid;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

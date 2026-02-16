@@ -15,7 +15,6 @@ public class Beverage {
     @NotNull(message = "Price is required")
     @Positive(message = "Price must be greater than 0")
     private double price;
-
     public Beverage(){
 
     }

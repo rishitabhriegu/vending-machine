@@ -2,6 +2,7 @@ package com.vendingmachine.coffee_machine.service;
 
 import com.vendingmachine.coffee_machine.model.Beverage;
 import com.vendingmachine.coffee_machine.repository.BeverageRepository;
+import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

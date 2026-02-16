@@ -15,6 +15,7 @@ public class Receipt {
     private double totalAmount;
     private LocalDateTime createdAt;
     private LocalDate receiptDate;
+    private String username;
 
     public Receipt(List<ReceiptItem> items, double totalAmount) {
         this.items = items;
@@ -22,6 +23,8 @@ public class Receipt {
         this.createdAt =LocalDateTime.now();
         this.receiptDate=LocalDate.now();
     }
+
+    public Receipt() {}
 
     public List<ReceiptItem> getItems() {
         return items;
@@ -45,5 +48,21 @@ public class Receipt {
 
     public void setReceiptDate(LocalDate receiptDate) {
         this.receiptDate = receiptDate;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setTotalAmount(double totalAmount) {
+        this.totalAmount = totalAmount;
+    }
+
+    public void setItems(List<ReceiptItem> items) {
+        this.items = items;
     }
 }

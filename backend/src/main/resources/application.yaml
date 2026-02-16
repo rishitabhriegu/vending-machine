@@ -5,6 +5,7 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/coffee_machine
+      auto-index-creation: true
 
   mail:
     host: smtp.gmail.com

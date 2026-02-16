@@ -25,9 +25,7 @@ public class ReceiptService {
     public DailySalesResponse getTodaySales() {
 
         LocalDate today = LocalDate.now();
-
-        List<Receipt> receipts =
-                receiptRepository.findByReceiptDate(today);
+        List<Receipt> receipts = receiptRepository.findByReceiptDate(today);
 
         Map<String, Integer> itemCounts = new HashMap<>();
         double totalRevenue = 0;
@@ -45,15 +43,18 @@ public class ReceiptService {
             }
         }
 
-        DailySalesResponse response =
-                new DailySalesResponse(today, itemCounts, totalRevenue);
+        return new DailySalesResponse(today, itemCounts, totalRevenue);
+    }
 
-        //Build Email Body
+    public void sendDailySalesEmail() {
+
+        DailySalesResponse sales = getTodaySales();
+
         StringBuilder body = new StringBuilder();
         body.append("Daily Sales Report\n\n");
-        body.append("Date: ").append(today).append("\n\n");
+        body.append("Date: ").append(sales.getDate()).append("\n\n");
 
-        itemCounts.forEach((item, count) ->
+        sales.getItemCounts().forEach((item, count) ->
                 body.append(item)
                         .append(" : ")
                         .append(count)
@@ -61,15 +62,13 @@ public class ReceiptService {
         );
 
         body.append("\nTotal Revenue: ₹")
-                .append(totalRevenue);
+                .append(sales.getTotalRevenue());
 
-        //Send Email Immediately
         emailService.sendEmail(
-                "rishitabhriegu17@gmail.com",
+                "rishitabhriegu@infrrd.ai",
                 "Daily Sales Report",
                 body.toString()
         );
-
-        return response;
     }
+
 }

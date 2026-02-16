@@ -5,25 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="044e449a-d73c-4a5a-8557-b67623e241fa" name="Changes" comment="fixes">
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/CoffeeMachineApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/config/CorsConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/controller/BeverageController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/controller/CartController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/controller/ReceiptController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/dto/DailySalesResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/model/Beverage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/model/Receipt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/model/ReceiptItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/model/cart/Cart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/model/cart/CartItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/repository/BeverageRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/repository/ReceiptRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/service/BeverageService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/service/CartService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/service/EmailService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/service/ReceiptService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.yaml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/config/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/config/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/dto/AuthRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/exception/UserAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/exception/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/repository/CartRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/controller/BeverageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/controller/BeverageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/controller/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/controller/ReceiptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/controller/ReceiptController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/model/Beverage.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/model/Beverage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/model/Receipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/model/Receipt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/model/ReceiptItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/model/ReceiptItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/model/cart/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/model/cart/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/model/cart/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/model/cart/CartItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/repository/BeverageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/repository/BeverageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/repository/ReceiptRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/repository/ReceiptRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/service/BeverageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/service/BeverageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/service/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/service/ReceiptService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/vendingmachine/coffee_machine/service/ReceiptService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/resources/static/asset-manifest.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/resources/static/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/resources/static/manifest.json" beforeDir="false" />
@@ -38,7 +44,8 @@
       <change beforePath="$PROJECT_DIR$/backend/src/main/resources/static/static/js/main.366961e6.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/resources/static/static/js/main.366961e6.js.LICENSE.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/resources/static/static/js/main.366961e6.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/vendingmachine/coffee_machine/CoffeeMachineApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,12 +55,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/backend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -74,10 +82,16 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="39DT0RUJBhLJAuoODJ0UrJ7I17i" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -85,19 +99,37 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.CoffeeMachineApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.coffee-machine [clean,install].executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/OneDrive/Desktop/coffee-machine/src/main/resources/static&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/OneDrive/Desktop/coffee-machine&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.vendingmachine.coffee_machine.repository" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\HP\OneDrive\Desktop\coffee-machine\src\main\resources\static" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\OneDrive\Desktop\coffee-machine\backend\src\main\java\com" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.vendingmachine.coffee_machine.config" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install " />
+    </option>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
