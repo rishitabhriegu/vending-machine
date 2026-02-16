@@ -3,6 +3,8 @@ package com.vendingmachine.coffee_machine.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.UUID;
+
 @Document(collection = "users")
 public class User {
 
@@ -13,15 +15,15 @@ public class User {
     private String password;
     private Role role;
 
-    public User(String id, String username, String password, Role role) {
-        this.id = id;
+    public User(String username, String password, Role role) {
+        this.id = UUID.randomUUID().toString();
         this.username = username;
         this.password = password;
         this.role = role;
     }
 
     public User() {
-
+        this.id = UUID.randomUUID().toString();
     }
 
     public String getId() {

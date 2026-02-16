@@ -6,6 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.UUID;
 
 @Document(collection = "receipts")
 public class Receipt {
@@ -24,7 +25,9 @@ public class Receipt {
         this.receiptDate=LocalDate.now();
     }
 
-    public Receipt() {}
+    public Receipt() {
+        this.id = UUID.randomUUID().toString();
+    }
 
     public List<ReceiptItem> getItems() {
         return items;
