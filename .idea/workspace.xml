@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="044e449a-d73c-4a5a-8557-b67623e241fa" name="Changes" comment="fixes" />
+    <list default="true" id="044e449a-d73c-4a5a-8557-b67623e241fa" name="Changes" comment="UUID added, few validations, _class removal MongoConfig file and UI Fixes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,13 +121,22 @@
       <option name="project" value="LOCAL" />
       <updated>1770576892614</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="UUID added, few validations, _class removal MongoConfig file and UI Fixes">
+      <option name="closed" value="true" />
+      <created>1771269809147</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1771269809147</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Sending Email of Daily sales, and adding UI" />
     <MESSAGE value="Adding Reactjs Basic UI" />
     <MESSAGE value="fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
+    <MESSAGE value="UUID added, few validations, _class removal MongoConfig file and UI Fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="UUID added, few validations, _class removal MongoConfig file and UI Fixes" />
   </component>
 </project>
